@@ -17,6 +17,11 @@ const supabase = supabaseClient.createClient(supabaseURL, supabaseKey)
 
 app.get('/', (req, res) => {
     res.sendFile('public/MainPage.html', {root: __dirname });
+    res.sendFile('public/About.html', {root: __dirname });
+    res.sendFile('public/FindPark.html', {root: __dirname });
+    res.sendFile('public/FindParkByActivity.html', {root: __dirname });
+    res.sendFile('public/FindParkByTopic.html', {root: __dirname });
+
 }
 )
 
