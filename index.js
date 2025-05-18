@@ -55,11 +55,16 @@ app.post('/Parks', async(req, res) => {
     console.log("adding Park")
     console.log(req.body)
     const parkName = req.body.parkName
+    const parkRating = req.body.parkRating
+    const comments = req.body.comments
     console.log(parkName)
 
     const {data, error} = await supabase
     .from('Parks')
-    .insert({Park_Name: parkName})
+    .insert({Park_Name: parkName, 
+             Park_Ratings: parkRating,
+             Comments: comments
+           })
     .select()
     if (error) {
         console.log(`Error: ${error}`)

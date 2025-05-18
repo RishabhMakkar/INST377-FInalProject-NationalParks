@@ -89,7 +89,7 @@ body {
   width: 100%;
 }
 
-#topicsTable td, #activitiesTable th {
+#topicsTable td, #topicsTable th {
   border: 1px solid #ededed;
   padding: 8px;
 }
@@ -108,8 +108,35 @@ body {
 }
 
 
+
+
 #map { 
   height: 500px; 
   
+}
+
+
+#ratingsTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ratingsTable td, #ratingsTable th {
+  border: 1px solid #ededed;
+  padding: 8px;
+}
+
+#ratingsTable tr:nth-child(even){background-color: #6ffa8d;}
+#ratingsTable tr:nth-child(odd){background-color: #f2765b;}
+
+#ratingsTable tr:hover {background-color: #f5f5f5;}
+
+#ratingsTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
 }
 

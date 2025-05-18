@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>RatePark</title>
+        <link rel="stylesheet" href="Final.css">
+        <script defer src="RateParkjs.js"></script>
+    </head>
+
+    <body id =homePageBody>
+        <header id="headerfooter">
+            <h1>Rate a Park</h1>
+        </header>
+
+         <!-- Navigation Section -->
+         <nav id = "main-nav">
+            <ul><a href="MainPage.html">Main Page</a></ul> 
+            <ul><a href="About.html">About</a></ul>
+            <ul><a href="FindPark.html">Find Park</a></ul>
+            <ul><a href="FindParkByActivity.html">Activities</a></ul>
+            <ul><a href="FindParkByTopic.html">Topics</a></ul>
+        </nav>
+
+        <div> 
+                <form onsubmit="showRating(); return false;">
+                    <label>Enter National Park that you want to rate</label>
+                    <input type="text" id="enterParkForRate">
+                    <br>
+                    <label>Enter Rating from 1 to 5:</label>
+                    <input type="text" id="enterRating">
+                    <br>
+                    <label>Enter comments about the park</label>
+                    <input type="text" id="enterComments">
+                    <br>
+                    <input type="submit" value="Submit">
+                    <br>
+                  </form>
+                
+            </form> 
+
+            <form onsubmit="parkRatings(); return false;">
+                <label>Enter National Park to see ratings for:</label>
+                <input type="text" id="parkChosen">
+                <br>
+                <input type="submit" value="Submit">
+            <div id="table-container">
+
+                <table id="ratingsTable">
+                    <tr>            
+                    </tr>
+                </table>
+                
+
+            </div>
+            
+
+
+
+        </div>
+
+
+       
+        
+    <footer id="headerfooter">
+        <h1>Copyright Parks</h1>
+    </footer>
+
+    </body>
+
+</html>
