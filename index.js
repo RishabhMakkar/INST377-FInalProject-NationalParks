@@ -15,6 +15,11 @@ const supabaseKey = process.env.SUPABASE_KEY
 
 const supabase = supabaseClient.createClient(supabaseURL, supabaseKey)
 
+app.get('/', (req, res) => {
+    res.sendFile('public/MainPage.html', {root: __dirname });
+}
+)
+
 app.get('/States', async(req, res) => {
     console.log('attempting to get states')
     const {data, error} = await supabase.from('States').select()

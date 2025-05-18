@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>FindPark</title>
+        <link rel="stylesheet" href="Final.css">
+        <script defer src="MapPage.js"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+   
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""> </script>
+
+
+
+    </head>
+
+    <body id =homePageBody>
+        <header id="headerfooter">
+            <h1>Look for a Park</h1>
+        </header>
+
+         <!-- Navigation Section -->
+    <nav id = "main-nav">
+        <ul><a href="MainPage.html">Main Page</a></ul> 
+        <ul><a href="About.html">About</a></ul>
+        <ul><a href="FindPark.html">Find Park</a></ul>
+        <ul><a href="FindParkByActivity.html">Activities</a></ul>
+        <ul><a href="FindParkByTopic.html">Topics</a></ul>
+    </nav>
+
+   
+
+    <form onsubmit="loadMap(); return false;">
+        <label>Enter National Park:</label>
+        <input type="text" id="enterPark"><br>
+        <input type="submit" value="Submit">
+        <br>
+      </form>
+
+        <div id = "map"></div>
+    <footer id="headerfooter">
+        <h1>Copyright Parks</h1>
+    </footer>
+
+    </body>
+
+</html>
