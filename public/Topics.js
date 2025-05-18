@@ -22,7 +22,7 @@ function loadTopicsForm() {
     })
 
     selectState = document.getElementById("stateIDTopic")
-    fetch('http://localhost:3000/states')
+    fetch('/states')
     .then(result => result.json())
     .then(resultJson => {
        // console.log(resultJson)
