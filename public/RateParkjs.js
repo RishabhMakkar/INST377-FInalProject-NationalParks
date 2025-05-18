@@ -38,8 +38,6 @@ function parkRatings() {
  tableHeadComments.innerHTML="Comments"
  ratingsTable.appendChild(tableHeadComments)
 
- 
-   
       fetch(`/Parks`)
       .then((result) => result.json())
       .then((resultJson) => {
@@ -47,7 +45,6 @@ function parkRatings() {
         resultJson.forEach(resultObject => {
             if (resultObject['Park_Name'] ==enteredPark) {
 
-            
             const tableRow = document.createElement('tr');
                 const parkNameColumn = document.createElement('td');
                 const ratingsColumn = document.createElement('td')
@@ -64,15 +61,11 @@ function parkRatings() {
                 console.log(tableRow)
                 console.log("TIBS")
                 ratingsTable.appendChild(tableRow)
-                //  console.log(activitiesTable)
                 
                 
             document.getElementById('table-container').appendChild(ratingsTable)
         }
-
-            
-        });
-     //  
+        });  
       })
     }
 

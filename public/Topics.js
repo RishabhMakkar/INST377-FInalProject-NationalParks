@@ -14,8 +14,6 @@ function loadTopicsForm() {
             console.log(topicOption)
         
             selectTopic.appendChild(topicOption)
-            
-
 
         }) 
        
@@ -41,13 +39,6 @@ function loadTopicsForm() {
     })
 }
 
-/*function getChosenTopic() {
-    const chosenTopic = document.getElementById('topicsID').value;
-    console.log(chosenTopic)
-    return chosenTopic
-  
-}
-*/
 function getChosenTopic() {
 
    
@@ -133,11 +124,6 @@ function getChosenTopic() {
                  } 
              });
       })
-     
-     
-    
- 
-   
  }
 
 window.onload=loadTopicsForm()

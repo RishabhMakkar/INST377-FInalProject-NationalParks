@@ -1,19 +1,3 @@
-
-
-
-/*function getStates() {
-   fetch("https://developer.nps.gov/api/v1/parks?limit=496&api_key=zWFbEO3KmJhujZKhnu1T6sToOLvtrXdMJCRVxK5W")
-   .then(result => result.json())
-   .then(resultJson => {
-    //console.log(resultJson.data)
-    resultJson.data.forEach(resultObject => {
-        console.log(resultObject.addresses)
-    })
-})
-}
-*/
-
-
 function getChosenActivity() {
    
    const activitiesTable = document.getElementById('activitiesTable')
@@ -160,13 +144,6 @@ function loadActivitiesForm() {
 
     })
 }
-
-function getStates(){
-    
-
-}
-
-
 
 window.onload=loadActivitiesForm()
 window.onload=getStates()
