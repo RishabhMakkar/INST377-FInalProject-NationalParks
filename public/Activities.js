@@ -142,10 +142,10 @@ function loadActivitiesForm() {
        
     })
     selectState = document.getElementById("stateID")
-    fetch('http://localhost:3000/states')
+    fetch('/states')
     .then(result => result.json())
     .then(resultJson => {
-       // console.log(resultJson)
+       console.log(resultJson)
        resultJson.forEach(resultState => {
        // console.log(resultState['State_Name'])
 
