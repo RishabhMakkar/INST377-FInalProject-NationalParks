@@ -62,6 +62,7 @@ function parkRatings() {
                 tableRow.appendChild(ratingsColumn);
                 tableRow.appendChild(commentsColumn);
                 console.log(tableRow)
+                console.log("TIBS")
                 ratingsTable.appendChild(tableRow)
                 //  console.log(activitiesTable)
                 
@@ -76,4 +77,5 @@ function parkRatings() {
     }
 
    // window.onload= parkRatings()
+   // tibs
     
