@@ -15,3 +15,7 @@ The website has been deployed on the following link:
  Supabase was used to build two back-end databases. One free Rest API was used as well to build the website. 
 
  To allow the user to select an activity, <a href = https://developer.nps.gov/api/v1/activities> https://developer.nps.gov/api/v1/activities <a> was used to load data in the form. To show the activites with tables, <a href =https://developer.nps.gov/api/v1/activities/parks> https://developer.nps.gov/api/v1/activities/parks</a> was called. For the topics web page, <a href = https://developer.nps.gov/api/v1/topics> https://developer.nps.gov/api/v1/topics <a> was used to load data in the form and <a href =https://developer.nps.gov/api/v1/topics/parks> https://developer.nps.gov/api/v1/topics/parks</a> was called to show the parks in the table.
+
+<a href = https://developer.nps.gov/api/v1/places> https://developer.nps.gov/api/v1/places </a> was used to get the coordinates to build the map. 
+<a href =  https://developer.nps.gov/api/v1/multimedia/galleries> https://developer.nps.gov/api/v1/multimedia/galleries </a>
+
