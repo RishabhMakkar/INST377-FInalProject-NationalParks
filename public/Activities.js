@@ -140,8 +140,6 @@ function loadActivitiesForm() {
        selectState.appendChild(stateOption)
 
        }) 
-
-
     })
 }
 

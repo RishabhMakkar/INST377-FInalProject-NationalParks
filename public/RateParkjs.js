@@ -50,7 +50,6 @@ function parkRatings() {
                 const ratingsColumn = document.createElement('td')
                 const commentsColumn = document.createElement('td')
 
-
                 parkNameColumn.innerHTML=resultObject['Park_Name']
                 ratingsColumn.innerHTML=resultObject['Park_Ratings']
                 commentsColumn.innerHTML=resultObject['Comments']

@@ -19,7 +19,6 @@ function loadPhotos() {
         });
 
         simpleslider.getSlider()
-       
         })
 }
 
