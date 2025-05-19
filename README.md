@@ -20,8 +20,12 @@ The website has been deployed on the following link:
 <a href = https://developer.nps.gov/api/v1/places> https://developer.nps.gov/api/v1/places </a> was used to get the coordinates to build the map. The map library was used to build the map.
 <a href =  https://developer.nps.gov/api/v1/multimedia/galleries> https://developer.nps.gov/api/v1/multimedia/galleries </a> was used to build the photo slider on the home page. The slider library was used to make this slider.
 
+A GET request from supabase is used to display a form with US states.
+
+A POST request is used on the Rate a Park page. A user will submit to a database the name of a National Park and a rating on a scale of 1 to 5 for that specific park. A user can get a list of ratings for a certain park. A GET request will be called for the table that contains the user ratings.
+
 To run the application, use `node npm start`.\
-Install `npm express`, `npm nodemon`, `npm body-parser`, `npm dotenv`
+Install `npm express`, `npm nodemon`, `npm body-parser`, `npm dotenv`. Use a locahost sever to run the HTML, CSS and JS files.
 
 For future developers, one major area for improvement is the page where the users rate national parks. The form does not validate whether a user has submitted a proper National Park to be rated.
 
